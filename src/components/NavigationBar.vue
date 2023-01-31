@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav class="navigation-hidden">
         <div>
             <a href="#top">Top</a>
             <a href="#about">About</a>

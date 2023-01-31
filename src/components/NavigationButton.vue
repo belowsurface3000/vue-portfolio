@@ -1,12 +1,27 @@
 <template>
-    <div class="navigation-trigger">
-        <div class="nav-icon">
+    <div class="navigation-trigger" v-on:click="toggleNav">
+        <div class="nav-icon" :class="{open:showNav}" >
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
 </template>
+
+<script lang="ts">
+    export default {
+        data() {
+            return {
+                showNav: false
+            }
+        },
+        methods: {
+            toggleNav() {
+                this.showNav = this.showNav ? false : true;
+            },
+        }
+    }
+</script>
 
 <style lang="scss">
     @import "../styles/reset.scss";
