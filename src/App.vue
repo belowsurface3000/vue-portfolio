@@ -1,5 +1,8 @@
 <template>
   <BackgroundDiv />
+  <NavigationButton />
+  <NavigationBar />
+
   <main>
     <HeaderView />
     <AboutView />
@@ -15,6 +18,9 @@
   import { defineComponent } from 'vue';
 
   import BackgroundDiv from "./components/BackgroundDiv";
+  import NavigationButton from "./components/NavigationButton";
+  import NavigationBar from "./components/NavigationBar";
+
   import HeaderView from "./views/HeaderView";
   import AboutView from "./views/AboutView";
   import ServicesView from "./views/ServicesView";
@@ -27,6 +33,8 @@
     name: 'HomeView',
     components: {
       BackgroundDiv,
+      NavigationButton,
+      NavigationBar,
       HeaderView,
       AboutView,
       ServicesView,
