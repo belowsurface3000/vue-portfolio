@@ -1,30 +1,39 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <BackgroundDiv />
+  <main>
+    <HeaderView />
+    <AboutView />
+    <ServicesView />
+    <SkillsView />
+    <ReferencesView />
+    <ContactView />
+    <FooterView />
+  </main>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+  import { defineComponent } from 'vue';
 
-nav {
-  padding: 30px;
+  import BackgroundDiv from "./components/BackgroundDiv";
+  import HeaderView from "./views/HeaderView";
+  import AboutView from "./views/AboutView";
+  import ServicesView from "./views/ServicesView";
+  import SkillsView from "./views/SkillsView";
+  import ReferencesView from "./views/ReferencesView";
+  import ContactView from "./views/ContactView";
+  import FooterView from "./views/FooterView";
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+  export default defineComponent({
+    name: 'HomeView',
+    components: {
+      BackgroundDiv,
+      HeaderView,
+      AboutView,
+      ServicesView,
+      SkillsView,
+      ReferencesView,
+      ContactView,
+      FooterView,
+    },
+  });
+</script>
