@@ -3,10 +3,9 @@
         <h2>References 🪗</h2>
         <p>Fully functional websites, top performing tracks on Beatport, gigs in amazing locations and one hour experimental films. Here you can have a look into it and follow the links to explore them in full effect! By the way: Just click on a image slider to increase its size!</p>
         <div className="sliders-container">
+            <SliderWeb />
+            <SliderVideo />
             <SliderMusic />
-            <!-- <Slider1 />
-            <Slider2 />
-            <Slider3 /> -->
         </div>
         <div className="socials">
             <a href="https://www.youtube.com/channel/UCB0jjmkPvZ3r9NYJ7HCtpxw" target="_blank" rel="noreferrer"><img :src="require('../assets/icons/yt.png')" alt="Youtube Logo" /></a>
@@ -19,11 +18,14 @@
 
 <script lang="ts">
     import { defineComponent } from "vue";
+    import SliderWeb from "../components/SliderWeb.vue";
+    import SliderVideo from "../components/SliderVideo.vue";
     import SliderMusic from "../components/SliderMusic.vue";
 
     export default defineComponent({
-    name: 'HomeView',
     components: {
+      SliderWeb,
+      SliderVideo,
       SliderMusic
     },
   });

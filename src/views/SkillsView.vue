@@ -11,9 +11,9 @@
             <h4>Web-Dev. Frontend</h4>
             <ul>   
                 <li>HTML</li>
-                <li>CSS & SASS</li>
+                <li>CSS, SASS</li>
                 <li>JavaScript</li>
-                <li>React</li>
+                <li>React, Next.js</li>
                 <li>Redux</li>
             </ul>
         </div>
@@ -21,8 +21,8 @@
             <h4>Web-Dev. Backend</h4>
             <ul>
                 <li>Node.js</li>
+                <li>Express</li>
                 <li>MongoDB</li>
-                <li>Mongoose</li>
                 <li>PHP</li>
                 <li>MySQL</li>
             </ul>
