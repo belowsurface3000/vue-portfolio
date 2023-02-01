@@ -1,12 +1,12 @@
 <template>
-    <nav class="navigation-hidden">
+    <nav class="navigation-hidden" :class={navigationhhidden:!store.state.showNav}>
         <div>
-            <a href="#top">Top</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#skills"> Skills</a>
-            <a href="#references">References</a>
-            <a href="#contact">Contact</a>
+            <a href="#top" v-on:click="toggleNav">Top</a>
+            <a href="#about" v-on:click="toggleNav">About</a>
+            <a href="#services" v-on:click="toggleNav">Services</a>
+            <a href="#skills" v-on:click="toggleNav"> Skills</a>
+            <a href="#references" v-on:click="toggleNav">References</a>
+            <a href="#contact" v-on:click="toggleNav">Contact</a>
         </div>
         <div>
             <p>Navigation</p>
@@ -14,6 +14,22 @@
     </nav>
 </template>
 
+<script lang="ts">
+    import store from "../store";
+
+    export default {
+        data() {
+            return {
+                store,
+            }
+        }, 
+        methods: {
+            toggleNav() {
+                this.store.commit("toggleNav");
+            }
+        }
+    }
+</script>
 
 <style lang="scss">
     @import "../styles/reset.scss";
@@ -116,7 +132,7 @@
             }
         }
 
-        .navigation-hidden {
+        .navigationhhidden {
             display: none;
         }
     }

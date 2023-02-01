@@ -2,7 +2,7 @@
   <BackgroundDiv />
   <NavigationButton />
   <NavigationBar />
-
+  
   <main>
     <HeaderView />
     <AboutView />

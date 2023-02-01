@@ -1,6 +1,6 @@
 <template>
     <div class="navigation-trigger" v-on:click="toggleNav">
-        <div class="nav-icon" :class="{open:showNav}" >
+        <div class="nav-icon" :class="{open:store.state.showNav}" >
             <span></span>
             <span></span>
             <span></span>
@@ -9,16 +9,18 @@
 </template>
 
 <script lang="ts">
+    import store from "../store";
+
     export default {
         data() {
             return {
-                showNav: false
+                store,
             }
         },
         methods: {
             toggleNav() {
-                this.showNav = this.showNav ? false : true;
-            },
+                this.store.commit("toggleNav");
+            }
         }
     }
 </script>
