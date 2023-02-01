@@ -3,6 +3,7 @@
         <h2>References 🪗</h2>
         <p>Fully functional websites, top performing tracks on Beatport, gigs in amazing locations and one hour experimental films. Here you can have a look into it and follow the links to explore them in full effect! By the way: Just click on a image slider to increase its size!</p>
         <div className="sliders-container">
+            <SliderMusic />
             <!-- <Slider1 />
             <Slider2 />
             <Slider3 /> -->
@@ -15,3 +16,15 @@
         </div>
     </div>
 </template>
+
+<script lang="ts">
+    import { defineComponent } from "vue";
+    import SliderMusic from "../components/SliderMusic.vue";
+
+    export default defineComponent({
+    name: 'HomeView',
+    components: {
+      SliderMusic
+    },
+  });
+</script>

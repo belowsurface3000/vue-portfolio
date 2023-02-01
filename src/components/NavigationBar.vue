@@ -25,7 +25,7 @@
         }, 
         methods: {
             toggleNav() {
-                this.store.commit("toggleNav");
+                store.commit("toggleNav");
             }
         }
     }
