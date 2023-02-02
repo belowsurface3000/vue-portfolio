@@ -20,9 +20,9 @@
         <div class="bottom-text">
             <p>(c) 2023 Below Surface Medien</p>
             <div>
-                <a href="impressum">Impressum</a>
+                <router-link to="/impressum">Impressum</router-link>
                 <p>|</p>
-                <a href="datenschutz">Datenschutz</a>
+                <router-link to="datenschutz">Datenschutz</router-link>
             </div>
         </div>
     </footer>

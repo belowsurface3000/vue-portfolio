@@ -6,10 +6,9 @@
             <source src="/images/bannerHigh.jpg" />
             <img src="/images/banner.jpg" alt="The belowsurface.de banner" />
         </picture>
-
         <div className="banner">
             <h1>Below Surface Medien</h1>
-
+            
             <div>
                 <h4>Web-Development</h4>
                 <h4>Music Production</h4>
