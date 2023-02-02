@@ -3,45 +3,22 @@
   <NavigationButton />
   <NavigationBar />
   
-  <main>
-    <HeaderView />
-    <AboutView />
-    <ServicesView />
-    <SkillsView />
-    <ReferencesView />
-    <ContactView />
-    <FooterView />
-  </main>
+  <router-view />
+
 </template>
 
 <script>
   import { defineComponent } from 'vue';
 
-  import BackgroundDiv from "./components/BackgroundDiv";
-  import NavigationButton from "./components/NavigationButton";
-  import NavigationBar from "./components/NavigationBar";
-
-  import HeaderView from "./views/HeaderView";
-  import AboutView from "./views/AboutView";
-  import ServicesView from "./views/ServicesView";
-  import SkillsView from "./views/SkillsView";
-  import ReferencesView from "./views/ReferencesView";
-  import ContactView from "./views/ContactView";
-  import FooterView from "./views/FooterView";
-
+  import BackgroundDiv from "./components/BackgroundDiv.vue";
+  import NavigationButton from "./components/NavigationButton.vue";
+  import NavigationBar from "./components/NavigationBar.vue";
+  
   export default defineComponent({
-    name: 'HomeView',
     components: {
       BackgroundDiv,
       NavigationButton,
-      NavigationBar,
-      HeaderView,
-      AboutView,
-      ServicesView,
-      SkillsView,
-      ReferencesView,
-      ContactView,
-      FooterView,
+      NavigationBar
     },
   });
 </script>

@@ -22,7 +22,7 @@
             <div>
                 <router-link to="/impressum">Impressum</router-link>
                 <p>|</p>
-                <router-link to="datenschutz">Datenschutz</router-link>
+                <router-link to="/datenschutz">Datenschutz</router-link>
             </div>
         </div>
     </footer>
