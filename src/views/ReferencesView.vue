@@ -8,10 +8,10 @@
             <SliderMusic />
         </div>
         <div className="socials">
-            <a href="https://www.youtube.com/channel/UCB0jjmkPvZ3r9NYJ7HCtpxw" target="_blank" rel="noreferrer"><img :src="require('../assets/icons/yt.png')" alt="Youtube Logo" /></a>
-            <a href="https://open.spotify.com/artist/6tcSqEAmHTLmrztjM0dQl2" target="_blank" rel="noreferrer"><img :src="require('../assets/icons/sf.png')" alt="Spotify Logo" /></a>
-            <a href="https://soundcloud.com/besurelabel" target="_blank" rel="noreferrer"><img :src="require('../assets/icons/sc.png')" alt="Soundcloud Logo" /></a>
-            <a href="https://www.beatport.com/label/be-sure/47385" target="_blank" rel="noreferrer"><img :src="require('../assets/icons/bp.png')" alt="Beatport Logo" /></a>
+            <a href="https://www.youtube.com/channel/UCB0jjmkPvZ3r9NYJ7HCtpxw" target="_blank" rel="noreferrer"><img src="/images/icons/yt.png" alt="Youtube Logo" /></a>
+            <a href="https://open.spotify.com/artist/6tcSqEAmHTLmrztjM0dQl2" target="_blank" rel="noreferrer"><img src="/images/icons/sf.png" alt="Spotify Logo" /></a>
+            <a href="https://soundcloud.com/besurelabel" target="_blank" rel="noreferrer"><img src="/images/icons/sc.png" alt="Soundcloud Logo" /></a>
+            <a href="https://www.beatport.com/label/be-sure/47385" target="_blank" rel="noreferrer"><img src="/images/icons/bp.png" alt="Beatport Logo" /></a>
         </div>
     </div>
 </template>

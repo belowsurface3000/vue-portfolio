@@ -1,10 +1,10 @@
 <template>
     <header>
         <picture>
-            <source :src="require('../assets/images/bannerSmall.jpg')" media="(max-width: 850px)" />
-            <source :src="require('../assets/images/bannerMid.jpg')" media="(max-width: 1600px)" />
-            <source :src="require('../assets/images/bannerHigh.jpg')" />
-            <img :src="require('../assets/images/banner.jpg')" alt="The belowsurface.de banner" />
+            <source src="/images/bannerSmall.jpg" media="(max-width: 850px)" />
+            <source src="/images/bannerMid.jpg" media="(max-width: 1600px)" />
+            <source src="/images/bannerHigh.jpg" />
+            <img src="/images/banner.jpg" alt="The belowsurface.de banner" />
         </picture>
 
         <div className="banner">

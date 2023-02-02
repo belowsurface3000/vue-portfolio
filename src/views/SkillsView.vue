@@ -3,7 +3,7 @@
     <h2>Skills 💪</h2>
     <div className="skills-first-flexbox">
         <p>Time to shine. Our biggest advantage is having skills and knowledge in various professions. Therefore we are able to work independently and can deliver not only the finished product, but also the bits of pieces necessary to build it in first place: From audio recording to editing, still image and film work, to state of the art programming. Not to forget our trophies in music promotion! Please have a small glimpse into our capabilities:</p>
-          <img :src="require('../assets/images/beth-skills.jpg')" alt="An olf fashioned light bulb is glowing" />
+          <img src="/images/beth-skills.jpg" alt="An olf fashioned light bulb is glowing" />
     </div>
 
     <div className="skills-second-flexbox">
