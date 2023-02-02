@@ -3,14 +3,16 @@
     <h2>Contact 💌</h2>
     <p>It's getting serious! Please use the contact form to get in touch! You can use the contact form for questions, interest in our products or if you want to collaborate. We look forward hearing from you!</p>
     
-    <!-- <form v-if="unlockField == 'okay'" ref="form" @submit.prevent="sendEmail"> -->
-    <form v-if="unlockField == 'okay'" ref="form">
+    <form v-if="unlockField == 'okay'" ref="form" @submit.prevent="(e) => sendEmail(e)">
       <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" placeholder="Please type in your name here" required />
+      <input type="text" id="name" name="name" :value="name" placeholder="Please type in your name here" required />
+
       <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" placeholder="Please type in your email here" required />
+      <input type="email" id="email" name="email" :value="email" placeholder="Please type in your email here" required />
+
       <label for="message">Your Message:</label>
-      <textarea id="message" name="message"></textarea>
+      <textarea id="message" name="message" :value="message"></textarea>
+
       <button type="submit" value="Send" class="submit-button">Send!</button>
     </form> 
   
@@ -23,32 +25,29 @@
 </template>
 
 <script lang="ts">
-  // eslint-disable-next-line
-  // @ts-ignore
-  // import emailjs from '@emailjs/browser';
-  // const emailService = process.env.EMAIL_SERVICE;
-  // const emailTemplate = process.env.EMAIL_TEMPLATE;
-  // const emailUser = process.env.EMAIL_USER;
+
+  import emailjs from 'emailjs-com';
 
   const unlockField = "";
-
 
   export default {
     data() {
       return {
-        unlockField
+        unlockField,
+        name: "",
+        email: "",
+        message: ""
       }
     },
-    // methods: {
-    //   sendEmail() {
-    //     emailjs.sendForm(emailService, emailTemplate, this.$refs.form, emailUser)
-    //       .then((result: any) => {
-    //           console.log(result.text);
-    //       }, (error: any) => {
-    //           console.log(error.text);
-    //       });
-    //   }
-    // } 
+    methods: {
+      sendEmail(e: HTMLFormElement) {
+        try {
+          emailjs.sendForm(process.env.VUE_APP_EMAIL_SERVICE, process.env.VUE_APP_EMAIL_TEMPLATE, e.target, process.env.VUE_APP_EMAIL_USER)
+        } catch(error) {
+          console.log({ error })
+        }
+      }
+    }
   }
 </script>
 
