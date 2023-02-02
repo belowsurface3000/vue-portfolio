@@ -3,7 +3,7 @@
     <h2>Contact 💌</h2>
     <p>It's getting serious! Please use the contact form to get in touch! You can use the contact form for questions, interest in our products or if you want to collaborate. We look forward hearing from you!</p>
     
-    <form v-if="unlockField == 'okay'" ref="form" @submit.prevent="(e) => sendEmail(e)">
+    <form v-if="unlockField == 'okay'" @submit.prevent="(e) => sendEmail(e)">
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" :value="name" placeholder="Please type in your name here" required />
 
