@@ -8,6 +8,10 @@ VUE_APP_EMAIL_SERVICE=
 VUE_APP_EMAIL_TEMPLATE=
 VUE_APP_EMAIL_USER=
 
+Two pages are missing in the public repo /src/views/ for privacy reasons:
+- DatenschutzPage.vue
+- ImpressumPage.vue
+
 ## How to develop
 - clone the repo
 - $ npm i
